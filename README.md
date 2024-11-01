@@ -52,6 +52,7 @@ Loop for ini berjalan dari 1 hingga N (inklusif). Pada setiap iterasi, variabel 
 ### 4. Membuat Angka Acak
 ```python
 angka_acak = random()
+````
 
 Pada setiap iterasi, sebuah angka acak dihasilkan menggunakan fungsi random() dan disimpan dalam variabel angka_acak.
 
@@ -64,6 +65,7 @@ else:
     while angka_acak >= 0.5:
         angka_acak = random()
    print(f"data ke: {i} => {angka_acak}")
+````
 
 Jika angka_acak kurang dari `0.5`, maka angka langsung dicetak dengan `format data ke: {i} => {angka_acak}`.
 Jika angka_acak lebih besar atau sama dengan `0.5`, program akan masuk ke dalam loop while untuk terus menghasilkan angka acak baru hingga mendapatkan angka yang kurang dari `0.5`, lalu mencetak angka tersebut.
@@ -85,6 +87,7 @@ data ke: 3 => 0.12486530658774031
 data ke: 4 => 0.4755389441515395
 data ke: 5 => 0.4919317309126129
 Selesai
+````
 
 
 ## Berikut adalah hasin screenshot vsc
@@ -113,6 +116,7 @@ Program ini melakukan perhitungan laba bulanan dengan aturan sebagai berikut:
 4. **Bulan 8**: Mengalami penurunan laba menjadi 3% dari modal awal.
 
 Program akan menghitung laba untuk setiap bulan dan menampilkan hasilnya. Setelah 8 bulan, program juga menampilkan total laba yang diakumulasi selama periode tersebut.
+
 ## Cara Menjalankan Program
 
 1. Pastikan Python sudah terinstal di komputer Anda.
@@ -125,12 +129,15 @@ bash
 
 ## Penjelasan Kode
 ### 1. Modal Awal dan Variabel Laba
+
 ```python
 modal_awal = 100_000_000
 total_laba = 0
-
+````
+```PYTHON
    - `modal_awal: menyimpan modal awal pengusaha, yaitu 100 juta rupiah.`
    - `total_laba: akumulasi total laba dari bulan 1 hingga 8, dimulai dari 0.`
+````
 
 ### 2. Lingkaran Perhitungan Laba per Bulan
 ```python
@@ -147,6 +154,7 @@ for bulan in range(1, 9):
         laba = 0.05 * modal_awal
     elif bulan == 8:           # Bulan 8 mendapatkan laba 3%
         laba = 0.03 * modal_awal
+````
 
 Program menggunakan loop fordari bulan 1 hingga 8. Di setiap iterasi, program menentukan besarnya laba berdasarkan kondisi:
    - Bulan 1 dan 2 : laba 0%.
@@ -159,6 +167,7 @@ Program menggunakan loop fordari bulan 1 hingga 8. Di setiap iterasi, program me
 ```python
 total_laba += laba
 print(f"laba bulan ke- {bulan} sebesar: {laba}")
+````
 
 Setiap laba bulanan yang dihitung akan ditambahkan ke total_laba. Selain itu, program menampilkan laba yang diperoleh pada bulan tersebut.
 
@@ -172,7 +181,7 @@ Setelah loop selesai, program menampilkan total laba yang diperoleh selama 8 bul
 ## Contoh Output
 Jika Anda menjalankan program ini, outputnya mungkin akan terlihat seperti berikut:
 
-python
+```python
 laba bulan ke- 1 sebesar: 0
 laba bulan ke- 2 sebesar: 0
 laba bulan ke- 3 sebesar: 1000000.0
@@ -182,6 +191,7 @@ laba bulan ke- 6 sebesar: 5000000.0
 laba bulan ke- 7 sebesar: 5000000.0
 laba bulan ke- 8 sebesar: 3000000.0
 Total laba adalah: 19000000.0
+````
 
 ## Berikut adalah hasin screenshot vsc
 
@@ -218,6 +228,7 @@ Program ini adalah simulasi mesin ATM sederhana yang memungkinkan pengguna untuk
 ### 1. Inisialisasi Saldo
 ```python
 saldo = 1000000
+````
 
 Saldo awal pengguna diatur sebesar Rp 1.000.000.
 
@@ -227,6 +238,7 @@ def tampilkan_menu():
     print("\nSaldo saat ini: Rp", saldo)
     print("1. Tarik Uang")
     print("2. Keluar")
+````
 
 Fungsi ini menampilkan saldo pengguna dan dua opsi: Tarik Uang dan Keluar.
 
@@ -258,7 +270,7 @@ Saldo saat ini: Rp 500000
 2. Keluar
 Pilih menu (1/2): 2
 Terima kasih telah menggunakan ATM!
-```
+`````
 - Pada contoh ini:
    Pengguna memilih opsi "Tarik Uang" dan memasukkan jumlah penarikan Rp 500.000. Program berhasil melakukan penarikan dan mengurangi saldo.
    Pengguna kemudian memilih opsi "Keluar" untuk mengakhiri program.
