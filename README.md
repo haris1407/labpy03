@@ -7,9 +7,6 @@
 # LATIHAN 1:latihan1.py
 # Program Angka Acak dengan Nilai Kurang dari 0.5
 
-![Cuplikan layar 2024-11-01 173758](https://github.com/user-attachments/assets/aa14f8b3-52df-43f8-8414-8950221e519d)
-
-
 ## Deskripsi
 Program ini menghasilkan sejumlah N angka acak yang nilainya selalu kurang dari 0.5. Setiap angka acak ditampilkan secara berurutan dengan nomor urutannya. Program ini menggunakan kombinasi perulangan for dan while untuk memastikan bahwa setiap angka yang dihasilkan memenuhi kriteria yang ditentukan.
 
@@ -89,10 +86,9 @@ data ke: 5 => 0.4919317309126129
 Selesai
 ````
 
-
 ## Berikut adalah hasin screenshot vsc
 
-
+![Cuplikan layar 2024-11-01 173758](https://github.com/user-attachments/assets/89e8980b-e79b-4c9d-806f-aa4a86060de3)
 
 ## Penjelasan Kode
 Import Modul Random: from random import random untuk mengimpor fungsi random() yang akan digunakan untuk menghasilkan angka acak.
@@ -103,9 +99,6 @@ Output: Setiap angka acak ditampilkan dengan `format data ke: {nomor} => {angka}
 
 # LATIHAN 2.latihan2.py
 # Menghitung Laba Usaha selama 8 Bulan
-
-![Cuplikan layar 2024-11-01 174042](https://github.com/user-attachments/assets/b59de50f-0a78-4b9f-8f13-1162a4df9b76)
-
 
 ## Deskripsi 
 
@@ -123,9 +116,9 @@ Program akan menghitung laba untuk setiap bulan dan menampilkan hasilnya. Setela
 2. Simpan program ini sebagai latihan2.py.
 3. Buka terminal atau command prompt di lokasi penyimpanan file tersebut.
 4. Jalankan perintah berikut:
-bash
-```python3 latihan2.py
-
+```python
+latihan2.py
+`````
 
 ## Penjelasan Kode
 ### 1. Modal Awal dan Variabel Laba
@@ -195,7 +188,7 @@ Total laba adalah: 19000000.0
 
 ## Berikut adalah hasin screenshot vsc
 
-
+![Cuplikan layar 2024-11-01 174042](https://github.com/user-attachments/assets/4c12f364-8990-4a07-98d5-024e9bc9a2b7)
 
 # LATIHAN 3.latihan3.py
 # Simulasi Mesin ATM Sederhana
